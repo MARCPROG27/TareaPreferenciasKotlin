@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstFragment">
+
+    <TextView
+        android:id="@+id/lblentero"
+        android:layout_width="250dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="69dp"
+        android:text="VALOR ENTERO ALMACENADO:"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.293"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.103" />
+
+    <EditText
+        android:id="@+id/txtingresoentero"
+        android:layout_width="375dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:hint="Ingresa un número entero"
+        android:inputType="numberSigned"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <TextView
+        android:id="@+id/txtresultadoentero"
+        android:layout_width="72dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="624dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toEndOf="@+id/lblentero"
+        app:layout_constraintTop_toTopOf="@+id/txtingresoentero"
+        app:layout_constraintVertical_bias="0.071" />
+
+    <EditText
+        android:id="@+id/txttexto"
+        android:layout_width="375dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginBottom="572dp"
+        android:ems="10"
+        android:hint="Ingresa un texto"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.686"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/lblentero"
+        app:layout_constraintVertical_bias="0.166" />
+
+    <TextView
+        android:id="@+id/lbltexto"
+        android:layout_width="167dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="512dp"
+        android:text="TEXTO ALMACENADO:"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.098"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtresultadotexto"
+        android:layout_width="189dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="512dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/lbltexto" />
+
+    <Switch
+        android:id="@+id/txtboolean"
+        android:layout_width="375dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="63dp"
+        android:layout_marginBottom="460dp"
+        android:text="HOLA...TE ENCUENTRAS EN EL PRIMER FRAGMENTO"
+        android:textAlignment="viewStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtresultadotexto"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/txtingresodecimal"
+        android:layout_width="375dp"
+        android:layout_height="69dp"
+        android:layout_marginBottom="324dp"
+        android:ems="10"
+        android:hint="Ingresa un número decimal"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/lbldecimal"
+        android:layout_width="220dp"
+        android:layout_height="63dp"
+        android:layout_marginEnd="164dp"
+        android:layout_marginBottom="240dp"
+        android:text="VALOR DECIMAL ALMACENADO"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/txtresultadodecimal"
+        android:layout_width="118dp"
+        android:layout_height="62dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="240dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toEndOf="@+id/lbldecimal" />
+
+    <Button
+        android:id="@+id/btnborrar"
+        android:layout_width="129dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="124dp"
+        android:backgroundTint="#FF9800"
+        android:text="BORRAR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnguardar"
+        android:layout_width="114dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="120dp"
+        android:backgroundTint="#E91E63"
+        android:text="GUARDAR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.962"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnmostrar"
+        android:layout_width="110dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="124dp"
+        android:text="MOSTRAR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
