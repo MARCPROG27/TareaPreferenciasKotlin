@@ -17,44 +17,21 @@ import com.example.tareapreferenciaskotlin.databinding.ActivityMainBinding
 import com.google.android.material.internal.ContextUtils.getActivity
 
 class MainActivity : AppCompatActivity() {
-   // private val sharedPrefFile = "datospreferencias"
-
+  
 
 
 
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
-   // private lateinit var binding1: FirstFragment
+  
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         binding = ActivityMainBinding.inflate(layoutInflater)
 
-       // val view = binding.root
-       // setContentView(view)
-
 
         setContentView(binding.root)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-       // val mSharedPreferences: SharedPreferences =this.getSharedPreferences(sharedPrefFile, Context.MODE_PRIVATE)
-        //val editor: SharedPreferences.Editor = mSharedPreferences.edit()
-
-
 
 
         setSupportActionBar(binding.toolbar)
